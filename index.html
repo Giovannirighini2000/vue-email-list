@@ -9,9 +9,10 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 	</head>
 	<body>
+
 		<div id="app">
-            <ul>
-                <li v-for="(email, index) in emails">{{ email }}</li>
+            <ul v-if="allEmailsReceived">
+                <li  v-for="(email, index) in emails">{{ email }}</li>
             </ul>
 			
 		</div>
